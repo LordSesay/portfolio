@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malcolm Sesay | Cloud Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="chatbot.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Malcolm Sesay</h1>
+    <p>AWS Cloud Engineer | DevOps Enthusiast | Problem Solver</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Cloud Engineer with strong hands-on experience in AWS, DevOps, and automation. Passionate about secure, scalable infrastructure.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/LordSesay">GitHub Portfolio</a></li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <iframe src="MALCOLM SESAY.pdf" width="100%" height="500px"></iframe>
+    <a href="MALCOLM SESAY.pdf" download>Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+    <div id="qr-code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://github.com/LordSesay&size=150x150" alt="QR Code to Portfolio"/>
+    </div>
+  </section>
+
+  <div id="chatbot">
+    <button onclick="toggleChat()">💬 Chat</button>
+    <div id="chat-window" style="display:none;">
+      <p>Hello! Ask me about my projects, skills, or resume.</p>
+    </div>
+  </div>
+</body>
+</html>
